@@ -6,7 +6,13 @@
     background-position: center;
 }
 .second{
-    background-image: url(imag/karthik-garikapati-oBbTc1VoT-0-unsplash.jpg);
+    background-image: url(imag/pizza4.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.fourth{
+    background-image: url(imag/pizza6.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
