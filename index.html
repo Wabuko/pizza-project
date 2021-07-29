@@ -38,37 +38,38 @@
             </div>
         </section>
     
-    <section class="second  ">
+    <section class="second ">
         <div class="container mt-6">
-            <h5 class="text-center ">Pick your Pizza Size</h5>
+            <h5 class="text-center text-white">Pick your Pizza Size</h5>
             <div class="input-group mb-3">
                 <label class="input-group-text my-3" for="inputGroupSelect01">Size</label>
                 <select class="form-select my-3" id="size">
-                  <option value="1">Small @ 500</option>
-                  <option value="2">Medium @ 900</option>
-                  <option  Selected value="3">Large @ 1200</option>
+                  <option value="500">Small @ 500</option>
+                  <option value="900">Medium @ 900</option>
+                  <option  Selected value="1200">Large @ 1200</option>
                 </select>
               </div>
               <h5 class="text-center ">Pick your Crust</h5>
               <div class="input-group mb-3">
                 <label class="input-group-text " for="inputGroupSelect01">Crust</label>
                 <select class="form-select "  id="crust">
-                  <option value="1">Crispy @150</option>
-                  <option Selected value="2">Stuffed @250</option>
-                  <option value="3">Gluten-free @ 200</option>
+                  <option value="150">Crispy @150</option>
+                  <option Selected value="250">Stuffed @250</option>
+                  <option value="200">Gluten-free @ 200</option>
                 </select>
               </div>
               <h5 class="text-center ">Pick your Toppings</h5>
               <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Toppings</label>
                 <select class="form-select" id="toppings">
-                  <option value="1">Pepperoni</option>
-                  <option value="2">Mushrooms</option>
-                  <option Selected value="3"> Sausage</option>
+                  <option value="pepperoni">Pepperoni</option>
+                  <option value="mushroom">Mushrooms</option>
+                  <option Selected value="sausage"> Sausage</option>
                 </select>
               </div>
               <h5 class="text-center">Number to be delivered</h5>
-              <input class="form-control " type="number" placeholder="number to be delivered"min="1">
+              <input class="form-control " type="number" id="amount" placeholder="number to be delivered"min="1">
+              <button onclick="getTotal()" type="button" class="btn btn-dark m-3 ">ORDER</button>
             
               
             </div>
