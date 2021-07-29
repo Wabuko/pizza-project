@@ -1,6 +1,7 @@
-#intro{
-    background-image: url(imag/pizza1.jpg);
+
+.first{
+    background-image: url(imag/likemeat-CbNAuxSZTFo-unsplash.jpg);
     height: 100vh;
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
