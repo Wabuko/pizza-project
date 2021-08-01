@@ -1,3 +1,4 @@
+
 function getTotal() {
     let num1 = parseInt(document.getElementById("size").value)
     document.getElementById('sizea').innerHTML = num1
@@ -9,10 +10,10 @@ function getTotal() {
     alert(num3)
     let num4 = parseInt(document.getElementById("toppings").value)
     alert(num4)
-    document.getElementById('toppinga') = num
+    document.getElementById('toppinga').innerHTML = num4
+    let topping = document.getElementById("toppings").value
     let total = parseInt(((num1 + num2 + num4) * num3))
     alert(total)
-    let topping = document.getElementById("toppings").value
     if (num1 === 500 && num2 === 150 && num4 == 100) {
     alert("You have placed an order of" + " " + num3 + " " + "small" + " " + "crispy" + " " + "crust" + " " + "pepperoni" + " " + "pizza")
     
@@ -116,6 +117,15 @@ function getTotal() {
     }
     if(document.getElementById("crusta").innerHTML ==200){
     document.getElementById("crusty").innerHTML = 'glutten-free'
+    }
+    if(document.getElementById('toppinga').innerHTML == 100){
+        document.getElementById('toppingb').innerHTML = 'pepperoni'
+    }
+    if(document.getElementById('toppinga').innerHTML == 150){
+        document.getElementById('toppingb').innerHTML = 'mushrooms'
+    }
+   else if(document.getElementById('toppinga').innerHTML == 200){
+        document.getElementById('toppingb').innerHTML = 'sausage'
     }
     }
     
