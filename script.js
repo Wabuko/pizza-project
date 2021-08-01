@@ -1,4 +1,4 @@
-alert(123);
+
 function getTotal() {
     let num1 = parseInt(document.getElementById("size").value)
     document.getElementById('sizea').innerHTML = num1
@@ -134,10 +134,15 @@ function chekout() {
     
 }
 function delivery(){
-   let myLoc= prompt('Please enter your location ')
-   let myNam = prompt('Please enter your name ')
-   
-   
-    
-
+    alert("Delivery fee is 150 shilings")
+   let myLoc= prompt('Please enter your location ');
+   let myNam = prompt('Please enter your name');
+   document.getElementById("mahali").innerHTML = myNam +" "+ "your pizza will be delivered to " +" "+ myLoc +" ." 
+let kila =parseInt( document.getElementById("totala").innerHTML ) + parseInt(150)
+alert(kila) 
+   document.getElementById("toto").innerHTML = "The total cost of your pizza together with the delivery fee is" +" "+ kila
+   if (myLoc == "" && myNam=="") {
+    document.getElementById("mahali").innerHTML = ""
+    document.getElementById("toto").innerHTML = ""
+   } 
 }
