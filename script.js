@@ -163,5 +163,8 @@ else if (myLoc == "" ) {
     document.getElementById("mahali").innerHTML = ""
     document.getElementById("toto").innerHTML = ""
 }
-   
+else if(myNam ==null) {
+    document.getElementById("mahali").innerHTML = ""
+    document.getElementById("toto").innerHTML = ""
+}  
 }
