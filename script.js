@@ -4,7 +4,6 @@ function getTotal() {
     document.getElementById('sizea').innerHTML = num1
     let num2 = parseInt(document.getElementById("crust").value)
     document.getElementById('crusta').innerHTML = num2
-    alert(num2)
     let num3 = parseInt(document.getElementById("amount").value)
     alert(num3)
     let num4 = parseInt(document.getElementById("toppings").value)
