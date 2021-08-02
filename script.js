@@ -139,10 +139,29 @@ function delivery(){
    let myNam = prompt('Please enter your name');
    document.getElementById("mahali").innerHTML = myNam +" "+ "your pizza will be delivered to " +" "+ myLoc +" ." 
 let kila =parseInt( document.getElementById("totala").innerHTML ) + parseInt(150)
-alert(kila) 
    document.getElementById("toto").innerHTML = "The total cost of your pizza together with the delivery fee is" +" "+ kila
    if (myLoc == "" && myNam=="") {
     document.getElementById("mahali").innerHTML = ""
     document.getElementById("toto").innerHTML = ""
+    alert("Please enter a location and your name")
    } 
+else if(myLoc ==null && myNam==null) {
+    document.getElementById("mahali").innerHTML =''
+    document.getElementById("toto").innerHTML = ''
+}
+else if (myLoc == "" ) {
+    document.getElementById("mahali").innerHTML = ""
+    document.getElementById("toto").innerHTML = ""
+    alert("Please enter a location ")
+   } 
+   else if (myNam == "" ) {
+    document.getElementById("mahali").innerHTML = ""
+    document.getElementById("toto").innerHTML = ""
+    alert("Please enter a name ")
+   } 
+   else if(myLoc ==null) {
+    document.getElementById("mahali").innerHTML = ""
+    document.getElementById("toto").innerHTML = ""
+}
+   
 }
