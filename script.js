@@ -2,7 +2,6 @@
 function getTotal() {
     let num1 = parseInt(document.getElementById("size").value)
     document.getElementById('sizea').innerHTML = num1
-    alert(num1)
     let num2 = parseInt(document.getElementById("crust").value)
     document.getElementById('crusta').innerHTML = num2
     alert(num2)
