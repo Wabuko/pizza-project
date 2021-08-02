@@ -10,7 +10,6 @@ function getTotal() {
     let topping = document.getElementById("toppings").value
     let total = parseInt(((num1 + num2 + num4) * num3))
     document.getElementById("totala").innerHTML = total
-    alert(total)
     if (num1 === 500 && num2 === 150 && num4 == 100) {
         alert("You have placed an order of" + " " + num3 + " " + "small" + " " + "crispy" + " " + "crust" + " " + "pepperoni" + " " + "pizza")
 
@@ -92,12 +91,6 @@ function getTotal() {
     else if (num1 === 1200 && num2 === 200 && num4 == 200) {
         alert("You have placed an order of" + " " + num3 + " " + "large" + " " + "gluten-free" + " " + "crust" + " " + "sausage" + " " + "pizza")
     }
-}
-function delivery(){
-    let jina = document.getElementById("jina").value
-    alert (jina)
-    let mahali = document.getElementById("mahali").value
-    alert(mahali)
 }
 function chekout() {
     if (document.getElementById('sizea').innerHTML == 1200) {
